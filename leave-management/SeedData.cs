@@ -17,7 +17,7 @@ namespace leave_management
         
         private static void SeedUsers(UserManager<IdentityUser> userManager)
         {
-            if (userManager.FindByNameAsync("admin").Result == null)
+            if (userManager.FindByNameAsync("admin") == null)
             {
                 var user = new IdentityUser() { UserName = "admin@abc.no", Email = "admin@abc.no" };
                 var result = userManager.CreateAsync(user, "Password_123").Result;

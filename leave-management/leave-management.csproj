@@ -9,6 +9,8 @@
   <ItemGroup>
     <Compile Remove="Data\Migrations\20200309210753_AddedEmployeeDataPoints.cs" />
     <Compile Remove="Data\Migrations\20200309210753_AddedEmployeeDataPoints.Designer.cs" />
+    <Compile Remove="Data\Migrations\20200417180140_ChangedEmployeeVM.cs" />
+    <Compile Remove="Data\Migrations\20200417180140_ChangedEmployeeVM.Designer.cs" />
   </ItemGroup>
 
 
