@@ -4,42 +4,49 @@
     ViewData["Title"] = "Index";
 }
 
-<h1>Index</h1>
-
-<p>
-    <a asp-action="Create">Create New</a>
-</p>
 <div class="row">
     <div class="col-md-3">
-        <div class="card" style="width: 18rem;">
-            <div class="card-body text-center">
-                <h5 class="card-title">@Html.DisplayFor(model => model.TotalRequest)</h5>
-                <h5 class="card-text">Total Request</h5>
+        <div class="info-box">
+            <span class="info-box-icon bg-info"><i class="fa fa-tachometer-alt"></i></span>
+
+            <div class="info-box-content">
+                <span class="info-box-text">@Html.DisplayFor(model => model.TotalRequest)</span>
+                <span class="info-box-number">Total Request</span>
             </div>
+            <!-- /.info-box-content -->
         </div>
     </div>
     <div class="col-md-3">
-        <div class="card" style="width: 18rem;">
-            <div class="card-body text-center">
-                <h5 class="card-title text-warning">@Html.DisplayFor(model => model.PendingRequest)</h5>
-                <h5 class="card-text">Pending Request</h5>
+        <div class="info-box">
+            <span class="info-box-icon bg-warning"><i class="fa fa-exclamation-circle"></i></span>
+
+            <div class="info-box-content">
+                <span class="info-box-text">@Html.DisplayFor(model => model.PendingRequest)</span>
+                <span class="info-box-number">Pending Request</span>
             </div>
+            <!-- /.info-box-content -->
         </div>
     </div>
     <div class="col-md-3">
-        <div class="card" style="width: 18rem;">
-            <div class="card-body text-center">
-                <h5 class="card-title text-success">@Html.DisplayFor(model => model.ApprovedRequest)</h5>
-                <h5 class="card-text">Approved Request</h5>
+        <div class="info-box">
+            <span class="info-box-icon bg-success"><i class="fa fa-check-circle"></i></span>
+
+            <div class="info-box-content">
+                <span class="info-box-text">@Html.DisplayFor(model => model.ApprovedRequest)</span>
+                <span class="info-box-number">Approved Request</span>
             </div>
+            <!-- /.info-box-content -->
         </div>
     </div>
     <div class="col-md-3">
-        <div class="card" style="width: 18rem;">
-            <div class="card-body text-center">
-                <h5 class="card-title text-danger">@Html.DisplayFor(model => model.RejectedRequest)</h5>
-                <h5 class="card-text">Rejected Request</h5>
+        <div class="info-box">
+            <span class="info-box-icon bg-danger"><i class="fa fa-times-circle"></i></span>
+
+            <div class="info-box-content">
+                <span class="info-box-text">@Html.DisplayFor(model => model.RejectedRequest)</span>
+                <span class="info-box-number">Rejected Request</span>
             </div>
+            <!-- /.info-box-content -->
         </div>
     </div>
 </div>
